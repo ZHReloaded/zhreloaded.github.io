@@ -77,6 +77,7 @@ p {
 }
 
 .navbar-default {
+  font-weight: bold;
   padding: 0px;
   border-radius: 0px;
   border-color: #555;
@@ -147,6 +148,11 @@ a.kinder-surprise {
 li.dropdown-header {
   padding-left: 12px;
   border-bottom: 1px;
-  color: #ddd;
+  color: #ccc;
   border-color: #ccc;
+}
+
+.quote {
+  margin: 0px;
+  font-weight: bold;
 }
