@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Contact
-permalink: /contact
+permalink: /contact/
 date: 2015-09-21 
 ---

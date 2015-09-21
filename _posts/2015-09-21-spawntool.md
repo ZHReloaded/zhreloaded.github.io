@@ -1,5 +1,5 @@
 ---
-title: Gamemode Hooks
+title: Spawn Tool Tutorial
 layout: default
-permalink: guides/:title
+permalink: guides/spawntool/
 ---
