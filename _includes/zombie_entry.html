@@ -2,17 +2,17 @@
     <div class="col-sm-5">
       <div class="panel panel-primary">
         <div class="panel-heading">{{page.title}}</div>
-        <div class="panel-body"><img src="{{site.baseurl}}/{{page.img}}" class="flip"/></div>
+        <div class="panel-body"><img src="{{site.baseurl}}/{{page.img}}" class="img-responsive flip"/></div>
         <div class="panel-footer">
           <div class="row">
 		    {% if page.hp and page.dmg %}
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">HP</div>
                   <div class="panel-body">{{page.hp}}</div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">Damage</div>
                   <div class="panel-body">{{page.dmg}}</div>
@@ -25,13 +25,13 @@
               Speed
             </div>
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">Walking</div>
                   <div class="panel-body">{{page.walking}}</div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">Running</div>
                   <div class="panel-body">{{page.running}}</div>
@@ -52,13 +52,13 @@
               Damage
             </div>
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">Susceptible</div>
                   <div class="panel-body">{{page.susceptible}}</div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">Resistant</div>
                   <div class="panel-body">{{page.resistant}}</div>

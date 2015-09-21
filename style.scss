@@ -1,8 +1,6 @@
 ---
 ---
 
-@import "bootstrap";
-
 html {
   height: 100%;
   font-size: 100%;
@@ -83,17 +81,21 @@ p {
 
 .navbar-default .navbar-nav>.open>a, 
 .navbar-default .navbar-nav>.open>a:focus, 
-.navbar-default .navbar-nav>.open>a:hover {
+.navbar-default .navbar-nav>.open>a:hover,  
+.navbar-default .navbar-nav>.open>a:visited, {
   color: #999;
   border-color: #333;
+  background: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
-  border: 4px;
   color: #ccc;
 }
 .navbar-default .navbar-nav>li>a:hover {
   color: #999;
+}
+.navbar-default .navbar-nav>li>a:focus {
+  color: #ccc;
 }
 
 a {
@@ -117,14 +119,30 @@ a:hover {
   color: #fff;
 }
 
+.collapse.in {
+    display: flex;
+}
+.collapsing {
+    display: flex;
+}
+
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
 .navbar-header {
   margin: 0px auto;
   padding: 0px 18px;
-  float: left;
 }
 
 .navbar-brand {
   padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: 1px solid #999;
+  }
 }
 
 .footer {
@@ -142,7 +160,11 @@ a:hover {
 
 .navbar-right {
   margin: 0px auto;  
-  float: right;
+  display: inline-block;
+}
+
+.nav > li {
+  float: left;   
 }
 
 .list-group-item {
@@ -156,17 +178,21 @@ a.kinder-surprise {
   cursor: text !important;
 }
 
-.dropdown:hover .dropdown-menu {
+.no-touch .dropdown:hover .dropdown-menu { 
   display: block;
   margin-top: 0;
   background: #333;
 }
 
-.dropdown:focus .dropdown-menu {
+.no-touch .dropdown:focus .dropdown-menu {
   display: block;
   margin-top: 2000px;
   background: #333;
  }
+
+.touch .disabled {
+
+}
 
 .dropdown-menu {
   padding: 0px;
@@ -221,7 +247,7 @@ li.dropdown-header {
   color: #555;
 }
 
-.totes-pokes .col-sm-6 {
+.totes-pokes .col-xs-6 {
   padding: 0px 0px;   
 }
 
@@ -242,6 +268,10 @@ li.dropdown-header {
 }
 .totes-pokes .row {
   margin: 0px;
+}
+
+.img-responsive {
+  margin: auto;   
 }
 
 

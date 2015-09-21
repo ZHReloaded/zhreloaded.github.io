@@ -10,6 +10,7 @@
     {% include meta.html %}
       
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml" />
       
@@ -20,6 +21,16 @@
     <![endif]-->
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+      
+    <!-- Touchscreen detection -->
+    <script>
+      if ("ontouchstart" in document.documentElement) {
+        document.documentElement.className += (document.documentElement.className != undefined) ? " touch" : "touch";
+      } else {
+        document.documentElement.className += (document.documentElement.className != undefined) ? " no-touch" : "no-touch";
+      }
+    </script>
+    
   </head>
   <body>
     {% include bootstrap.html %}
@@ -27,20 +38,25 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header"> 
-          <a class="navbar-brand" href="/"><img src="{{ site.baseurl }}/images/logo.png" height = 42px></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ site.baseurl }}/images/logo.png" class="img-responsive"></a>
         </div>
-        <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="guides_menu" href="{{ site.baseurl }}/information">Information</span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="guides_menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" id="information_menu" href="{{ site.baseurl }}/information">Information</span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="information_menu">
                 <li role="presentation"><a href="{{ site.baseurl }}/information/about">About Zombie Horde</a></li> 
                 <li role="presentation"><a href="{{ site.baseurl }}/information/zh">Game Information</a></li> 
                 <li role="presentation"><a href="{{ site.baseurl }}/information/other">Other</a></li>
               </ul>
             </li> 
             <li class="dropdown">
-              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="guides_menu" href="{{ site.baseurl }}/guides">Guides</a> 
+              <a class="dropdown-toggle" data-toggle="dropdown" id="guides_menu" href="{{ site.baseurl }}/guides">Guides</a> 
               <ul class="dropdown-menu" role="menu" aria-labelledby="guides_menu">
                 <li class="dropdown-header">Game Customisation</li>
                 <li role="presentation"><a href="{{ site.baseurl }}/guides/npcs">NPCs</a></li> 
