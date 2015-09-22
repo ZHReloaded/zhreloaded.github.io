@@ -1,72 +1,70 @@
-  <div class="totes-pokes">
-    <div class="col-sm-5">
-      <div class="panel panel-primary">
-        <div class="panel-heading">{{page.title}}</div>
-        <div class="panel-body"><img src="{{site.baseurl}}/{{page.img}}" class="img-responsive flip"/></div>
-        <div class="panel-footer">
-          <div class="row">
-		    {% if page.hp and page.dmg %}
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">HP</div>
-                  <div class="panel-body">{{page.hp}}</div>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Damage</div>
-                  <div class="panel-body">{{page.dmg}}</div>
-                </div>
-              </div>
-			{% endif %}
+<div class="totes-pokes">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{page.title}}</div>
+    <div class="panel-body"><img src="{{site.baseurl}}/{{page.img}}" class="img-responsive flip"/></div>
+    <div class="panel-footer">
+      <div class="row">
+        {% if page.hp and page.dmg %}
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">HP</div>
+              <div class="panel-body">{{page.hp}}</div>
+            </div>
           </div>
-		  {% if page.walking and page.running %}
-            <div class="row">
-              Speed
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Damage</div>
+              <div class="panel-body">{{page.dmg}}</div>
             </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Walking</div>
-                  <div class="panel-body">{{page.walking}}</div>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Running</div>
-                  <div class="panel-body">{{page.running}}</div>
-                </div>
-              </div>
-            </div>
-		  {% endif %}
-		  {% if page.ability %}
-            <div class="row">
-              <div class="panel panel-primary">
-                <div class="panel-heading">Ability</div>
-                <div class="panel-body">{{page.ability}}</div>
-              </div>
-            </div>
-		  {% endif %}
-		  {% if page.susceptible and page.resistant %}
-            <div class="row">
-              Damage
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Susceptible</div>
-                  <div class="panel-body">{{page.susceptible}}</div>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Resistant</div>
-                  <div class="panel-body">{{page.resistant}}</div>
-                </div>
-              </div>
-            </div>
-		  {% endif %}
-        </div>
+          </div>
+        {% endif %}
       </div>
+      {% if page.walking and page.running %}
+        <div class="row">
+          Speed
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Walking</div>
+              <div class="panel-body">{{page.walking}}</div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Running</div>
+              <div class="panel-body">{{page.running}}</div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if page.ability %}
+        <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Ability</div>
+            <div class="panel-body">{{page.ability}}</div>
+          </div>
+        </div>
+      {% endif %}
+      {% if page.susceptible and page.resistant %}
+        <div class="row">
+          Damage
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Susceptible</div>
+              <div class="panel-body">{{page.susceptible}}</div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Resistant</div>
+              <div class="panel-body">{{page.resistant}}</div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
+</div>

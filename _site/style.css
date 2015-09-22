@@ -237,30 +237,30 @@ li.dropdown-header {
   color: #555;
 }
 
-.totes-pokes .col-xs-6 {
-  padding: 0px 0px;
+.totes-pokes {
+  float: right;
+  display: inline-flex;
+  margin: 4px 8px;
 }
-
 .totes-pokes .panel-primary {
   border-radius: 8px;
   text-align: center;
   margin: 0px;
 }
-
 .totes-pokes .panel-heading {
   padding: 0px;
 }
-
 .totes-pokes .panel-body {
   padding: 4px 0px;
 }
-
 .totes-pokes .panel-footer {
   padding: 0px;
 }
-
 .totes-pokes .row {
   margin: 0px;
+}
+.totes-pokes .col-xs-6 {
+  padding: 0px 0px;
 }
 
 .img-responsive {
