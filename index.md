@@ -8,7 +8,7 @@ date: 2015-09-21
 <p>Zombie Horde: Reloaded is currently in closed beta, with plans to be released very soon. Don't get too excited!</p>
 <h3>What the critics are saying...</h3>
 <p class="quote">"Brains... Roay roay roay!"</p>
-<p><i>- Stephen <a class="kinder-surprise" href="{{ site.baseurl }}/filmaudition">Conroay</a></i></p>
+<p><i>- Stephen <a class="kinder-surprise" href="{{ site.baseurl }}/filmaudition/">Conroay</a></i></p>
 <p class="quote">"It's fun for all the family!"</p>
 <p><i>- Garey Numan</i></p>
 <p class="quote">"The best Garry's Mod modded modular mod of 2015."</p>
