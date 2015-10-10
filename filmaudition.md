@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Film Audition
-permalink: /filmaudition
+permalink: /filmaudition/
 date: 2015-09-21 
 ---
 
