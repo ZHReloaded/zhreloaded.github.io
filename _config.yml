@@ -9,9 +9,14 @@ google_analytics: UA-63619308-2
 url: http://www.zombiehorde-reloaded.com/
 baseurl: ""
 
-markdown: kramdown
-highlighter: rouge
 permalink: /:title
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 version: v1.1.0
 
